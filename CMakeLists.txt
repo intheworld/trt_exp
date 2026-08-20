@@ -86,6 +86,9 @@ if(CMAKE_CUDA_COMPILER)
 
     add_trt_example(trt_plugin_infer examples/07_custom_plugin/infer.cpp)
     target_link_libraries(trt_plugin_infer PRIVATE custom_layer_plugin)
+
+    ## subdirectory
+    add_subdirectory(cuda_examples)
 else()
     message(WARNING "nvcc not found; custom IPluginV3 examples are disabled")
 endif()
