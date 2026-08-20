@@ -1,0 +1,12 @@
+build/
+generated_models/
+*.engine
+*.plan
+*.trt
+*.cache
+__pycache__/
+*.pyc
+/yolo26n.pt
+/yolo26n.onnx
+.venv/
+.vscode/
